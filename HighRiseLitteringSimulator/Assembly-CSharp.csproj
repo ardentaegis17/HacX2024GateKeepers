@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\BallisticProjectile.cs" />
     <Compile Include="Assets\Scripts\MainGameManager.cs" />
     <Compile Include="Assets\Scripts\WeightSettingsManager.cs" />
     <Compile Include="Assets\Scripts\LaunchBall.cs" />
