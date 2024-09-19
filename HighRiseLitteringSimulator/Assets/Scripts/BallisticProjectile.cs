@@ -34,7 +34,9 @@ public class LaunchControls : MonoBehaviour
     void LaunchBall(GameObject launchObject)
     {
         // Launch projectile using rigid body
+        
         Rigidbody projectileBody = launchObject.GetComponent<Rigidbody>();
+        projectileBody.transform.position = launchSite.transform.position;
         projectileBody.velocity = CalculateVelocity();
 
     }
