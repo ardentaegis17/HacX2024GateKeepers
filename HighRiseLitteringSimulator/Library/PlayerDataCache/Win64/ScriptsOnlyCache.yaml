@@ -117,17 +117,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1566}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1734}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2630}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 2694}
+      Script: {instanceID: 2696}
     - Class: 114
       Script: {instanceID: 2836}
     - Class: 114
@@ -200,15 +200,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1566}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1734}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2630}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2636}
     - Class: 114
       Script: {instanceID: 2836}
     - Class: 114
@@ -283,7 +283,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 1536}
     - Class: 114
       Script: {instanceID: 2836}
     - Class: 114
@@ -350,13 +350,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1566}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2630}
     - Class: 114
       Script: {instanceID: 2836}
     - Class: 114
@@ -394,6 +394,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 77633fe098f90654653c7b5704346d8f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EstimatorMonteCarloGeneralized
   - hash:
       serializedVersion: 2
       Hash: d41ab9b5ea92474f9c0a6937a0607ce1
@@ -580,12 +586,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TMP_TextSelector_A
-  - hash:
-      serializedVersion: 2
-      Hash: 77633fe098f90654653c7b5704346d8f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EstimatorMonteCarloGeneralized
   - hash:
       serializedVersion: 2
       Hash: fce9b835d1e8b08e7ecea8da19f21986
@@ -1517,4 +1517,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/QuickStart.unity
   - Assets/Scenes/Sandbox.unity
   playerPath: C:/Users/ongai/Desktop/HacX 2024/HacX2024GateKeepers/HighRiseLitteringSimulator/Build
-    V1.1/HighRiseLitteringSimulator.exe
+    V1.2/HighRiseLitteringSimulator.exe

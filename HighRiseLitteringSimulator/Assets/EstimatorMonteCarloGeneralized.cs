@@ -141,6 +141,14 @@ public class EstimatorMonteCarloGeneralized : MonoBehaviour
         rigidBody = chosenObject.GetComponent<Rigidbody>();
         useDefaultDistributions = SandboxUI.useDefaultDistribution;
         globalOptimumOrMeanBest = SandboxUI.globalOptimumOrMeanBest;
+        throwVelocityDistributionShape = SandboxUI.throwVelocityDistributionShape;
+        throwVelocityDistributionRate = SandboxUI.throwVelocityDistributionRate;
+        throwAngleDistributionMean = SandboxUI.throwAngleDistributionMean;
+        throwAngleDistributionSD = SandboxUI.throwAngleDistributionSD;
+        facingAngleDistributionMean = SandboxUI.facingAngleDistributionMean;
+        facingAngleDistributionSD = SandboxUI.facingAngleDistributionSD;
+        windSpeedDistributionShape = SandboxUI.windSpeedDistributionShape;
+        windSpeedDistributionScale = SandboxUI.windSpeedDistributionScale;
         
         objectName = SandboxUI.thrownObject;
         landingPointVector = SandboxUI.landingPosition;
@@ -209,14 +217,10 @@ public class EstimatorMonteCarloGeneralized : MonoBehaviour
             
         } else
         {
-            throwVelocityDistributionShape = SandboxUI.throwVelocityDistributionShape;
-            throwVelocityDistributionRate = SandboxUI.throwVelocityDistributionRate;
-            throwAngleDistributionMean = SandboxUI.throwAngleDistributionMean;
-            throwAngleDistributionSD = SandboxUI.throwAngleDistributionSD;
-            facingAngleDistributionMean = SandboxUI.facingAngleDistributionMean;
-            facingAngleDistributionSD = SandboxUI.facingAngleDistributionSD;
-            windSpeedDistributionShape = SandboxUI.windSpeedDistributionShape;
-            windSpeedDistributionScale = SandboxUI.windSpeedDistributionScale;
+
+
+            Debug.Log($"velocity dist shape: {throwVelocityDistributionShape}" + $" velocity dist rate: {throwVelocityDistributionRate}");
+            Debug.Log($"wind dist shape: {windSpeedDistributionShape}" + $" wind dist scale: {windSpeedDistributionScale}");
 
             throwVelocity = new Gamma(throwVelocityDistributionShape, throwVelocityDistributionRate);
             throwAngle = new Normal(throwAngleDistributionMean, throwAngleDistributionSD);

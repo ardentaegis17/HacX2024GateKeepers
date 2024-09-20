@@ -84,13 +84,13 @@ public class QuickStartUI : MonoBehaviour
 
         string faceAngleChoice = faceAngleInput.options[faceAngleInput.value].text;
         switch(faceAngleChoice){
-            case "Facing Left (45)":
+            case "Facing Right (45)":
                 faceAngle = 45f;
                 break;
             case "Facing Forward (90)":
                 faceAngle = 90f;
                 break;
-            case "Facing Right (135)":
+            case "Facing Left (135)":
                 faceAngle = 135f;
                 break;
             default:

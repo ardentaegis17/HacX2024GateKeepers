@@ -56,7 +56,7 @@ public class SandboxUI : MonoBehaviour
     }
        void onSubmit()
     {
-        void parseDistribution(double alpha, double beta, TMP_InputField input){
+        (double, double) parseDistribution(TMP_InputField input){
             string inputText = input.text;
             string[] values = inputText.Trim().Split(',');
             if(values.Length == 2){
@@ -64,20 +64,22 @@ public class SandboxUI : MonoBehaviour
                 if(double.TryParse(values[0],out x) &&
                 double.TryParse(values[1], out y))
                 {
-                    alpha = x;
-                    beta = y;
+
+                    return (x, y);
                 }
             }
+            return (0d,0d);
         }
         
         globalOptimumOrMeanBest = chooseOptimum.options[chooseOptimum.value].text;
 
         if(useDefaultDistribution == false){
             
-            parseDistribution(throwVelocityDistributionShape, throwVelocityDistributionRate,throwSpeedInput);
-            parseDistribution(throwAngleDistributionMean,throwAngleDistributionSD,throwAngleInput);
-            parseDistribution(facingAngleDistributionMean,facingAngleDistributionSD,faceAngleInput);
-            parseDistribution(windSpeedDistributionShape,windSpeedDistributionScale,windSpeedInput);
+            (throwVelocityDistributionShape, throwVelocityDistributionRate) = parseDistribution(throwSpeedInput);
+            (throwAngleDistributionMean,throwAngleDistributionSD) = parseDistribution(throwAngleInput);
+            (facingAngleDistributionMean,facingAngleDistributionSD) = parseDistribution(faceAngleInput);
+            (windSpeedDistributionShape,windSpeedDistributionScale) = parseDistribution(windSpeedInput);
+
         }
 
 
